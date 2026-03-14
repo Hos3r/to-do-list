@@ -128,7 +128,7 @@ void DeleteTask(std::vector<Task>& todoList)
     std::cin >> taskDel;
     if(taskDel > 0 && taskDel <= (int)todoList.size())
         {
-            todoList.erase(todoList.begin() + (taskDel-1));
+            todoList.erase(todoList.begin() + ((size_t)taskDel-1));
             std::cout << "Task deleted.\n";
         }
     else
