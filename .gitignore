@@ -3,6 +3,10 @@
 
 .vscode/
 
+#file with a list of tasks should be stored localy
+tasks.txt 
+
+
 # Compiled Object files
 *.slo
 *.lo
