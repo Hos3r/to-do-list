@@ -3,7 +3,7 @@
 
 .vscode/
 
-#file with a list of tasks should be stored localy
+#file with a list of tasks (stored localy on clients computer)
 tasks.txt 
 
 
