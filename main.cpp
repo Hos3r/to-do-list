@@ -113,12 +113,17 @@ void SaveTasksToFile(const std::vector<Task>& todoList)
 
 void ShowTasks(const std::vector<Task>& todoList)
 {
+    int sum=0;
+
     std::cout << "\nList:\n";
     for(size_t i=0 ; i<todoList.size() ; i++)
         {
+            sum += todoList.at(i).get_timeNeeded();
             std::cout << i + 1 << ".\n";
             todoList.at(i).info();
         }
+    
+    std::cout << "All of tasks should approximately take about: " << sum << " minutes" << std::endl;
 }
 
 void DeleteTask(std::vector<Task>& todoList)
